@@ -1,0 +1,6 @@
+from src.interface_adapters.gateways.custom_error.custom_error import CustomError
+
+from src.interface_adapters.gateways.book_respository.memory_book_repository import make_memory_book_repository
+
+MemoryBookRepository = make_memory_book_repository(CustomError)
+book_repository = MemoryBookRepository()
